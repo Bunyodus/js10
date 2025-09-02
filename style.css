@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1140px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.card_box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    place-items: center; 
+    background-color: black;
+    width: 600px;
+    height: 600px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: azure;
+}
+.box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.rang_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(17, 255, 255);
+    border-radius: 15px;
+    width: 70px;
+    height: 200px;
+    padding: 20px 0;
+}
+.rang_card{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
+.shakl_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(31, 247, 247);
+    width: 70px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 15px 0;
+}
+.s1{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+}
+.s2{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    clip-path: circle(50% at 50% 50%);
+}
+.s3{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    clip-path: inset(0);
+}
+.s4{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+    );
+}
